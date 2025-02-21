@@ -38,7 +38,7 @@ def show_toast():
 
     # 확인 버튼을 root의 기본 색상으로 설정
     ok_button = ctk.CTkButton(alert_window, text="확인",command=lambda: on_ok_button_click(alert_window), width=120, height=40,
-                              corner_radius=10,fg_color="blue", hover_color="gray")
+                              corner_radius=10,fg_color="#1F6AA5", hover_color="#144870")
     ok_button.pack(pady=20)
 
     # 알림 후 카운트다운 다시 시작

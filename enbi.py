@@ -36,11 +36,9 @@ def show_toast():
     label.pack(pady=20)
 
     # 확인 버튼을 root의 기본 색상으로 설정
-    ok_button = ctk.CTkButton(alert_window, text="확인",command=lambda: on_ok_button_click(alert_window), width=120, height=40,
-                              corner_radius=10,fg_color="blue", hover_color="blue")
+    ok_button = tk.Button(alert_window, text="확인", command=lambda: on_ok_button_click(alert_window), width=12, height=2, 
+                          bg=root.cget('bg'), fg='blue', font=("Arial", 12, "bold"))
     ok_button.pack(pady=20)
-
-
 
 
 # 카운트다운 함수 (분:초 형식)
